@@ -1,0 +1,6 @@
+@MinApiValidationRepro_HostAddress = http://localhost:5078
+
+GET {{MinApiValidationRepro_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

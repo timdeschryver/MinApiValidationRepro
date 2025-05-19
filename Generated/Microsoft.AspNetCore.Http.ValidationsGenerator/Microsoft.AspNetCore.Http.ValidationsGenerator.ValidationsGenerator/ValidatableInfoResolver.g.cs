@@ -64,9 +64,19 @@ namespace Microsoft.AspNetCore.Http.Validation.Generated
                 validatableInfo = CreateEntity();
                 return true;
             }
+            if (type == typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Persons.Entity>))
+            {
+                validatableInfo = CreateDictionary`2();
+                return true;
+            }
             if (type == typeof(global::MinApiValidationRepro.Pets.Entity))
             {
                 validatableInfo = CreateEntity();
+                return true;
+            }
+            if (type == typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Pets.Entity>))
+            {
+                validatableInfo = CreateDictionary`2();
                 return true;
             }
 
@@ -100,6 +110,38 @@ namespace Microsoft.AspNetCore.Http.Validation.Generated
                 ]
             );
         }
+        private ValidatableTypeInfo CreateDictionary`2()
+        {
+            return new GeneratedValidatableTypeInfo(
+                type: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Persons.Entity>),
+                members: [
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Persons.Entity>),
+                        propertyType: typeof(global::MinApiValidationRepro.Persons.Entity),
+                        name: "this[]",
+                        displayName: "this[]"
+                    ),
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Persons.Entity>),
+                        propertyType: typeof(global::System.Collections.Generic.ICollection<global::MinApiValidationRepro.Persons.Entity>),
+                        name: "System.Collections.Generic.IDictionary<TKey,TValue>.Values",
+                        displayName: "System.Collections.Generic.IDictionary<TKey,TValue>.Values"
+                    ),
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Persons.Entity>),
+                        propertyType: typeof(global::System.Collections.Generic.IEnumerable<global::MinApiValidationRepro.Persons.Entity>),
+                        name: "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values",
+                        displayName: "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values"
+                    ),
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Persons.Entity>),
+                        propertyType: typeof(global::System.Collections.ICollection),
+                        name: "System.Collections.IDictionary.Values",
+                        displayName: "System.Collections.IDictionary.Values"
+                    ),
+                ]
+            );
+        }
         private ValidatableTypeInfo CreateEntity()
         {
             return new GeneratedValidatableTypeInfo(
@@ -116,6 +158,38 @@ namespace Microsoft.AspNetCore.Http.Validation.Generated
                         propertyType: typeof(string),
                         name: "Breed",
                         displayName: "Breed"
+                    ),
+                ]
+            );
+        }
+        private ValidatableTypeInfo CreateDictionary`2()
+        {
+            return new GeneratedValidatableTypeInfo(
+                type: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Pets.Entity>),
+                members: [
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Pets.Entity>),
+                        propertyType: typeof(global::MinApiValidationRepro.Pets.Entity),
+                        name: "this[]",
+                        displayName: "this[]"
+                    ),
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Pets.Entity>),
+                        propertyType: typeof(global::System.Collections.Generic.ICollection<global::MinApiValidationRepro.Pets.Entity>),
+                        name: "System.Collections.Generic.IDictionary<TKey,TValue>.Values",
+                        displayName: "System.Collections.Generic.IDictionary<TKey,TValue>.Values"
+                    ),
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Pets.Entity>),
+                        propertyType: typeof(global::System.Collections.Generic.IEnumerable<global::MinApiValidationRepro.Pets.Entity>),
+                        name: "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values",
+                        displayName: "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values"
+                    ),
+                    new GeneratedValidatablePropertyInfo(
+                        containingType: typeof(global::System.Collections.Generic.Dictionary<string, global::MinApiValidationRepro.Pets.Entity>),
+                        propertyType: typeof(global::System.Collections.ICollection),
+                        name: "System.Collections.IDictionary.Values",
+                        displayName: "System.Collections.IDictionary.Values"
                     ),
                 ]
             );

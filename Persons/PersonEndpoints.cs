@@ -10,5 +10,10 @@ public static class PersonEndpoints
         {
             return TypedResults.Ok(entity);
         });
+
+        routes.MapPost("/personsdict", (Dictionary<string, Entity> dict) =>
+        {
+            return TypedResults.Ok(dict);
+        });
     }
 }

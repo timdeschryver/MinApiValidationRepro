@@ -10,5 +10,10 @@ public static class PetEndpoints
         {
             return TypedResults.Ok(entity);
         });
+
+        routes.MapPost("/petsditct", (Dictionary<string, Entity> dict) =>
+        {
+            return TypedResults.Ok(dict);
+        });
     }
 }
